@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header-container">
+            <h1>GitHub Profile Finder</h1>
+
+        </div>
+        <div id="app">
+            <div class="search-container" search-bar>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Enter a Github Username..." id="input" user-input>
+                <button class="btn" id="submit">Search</button>
+            </div>
+
+            <div class="portfolio-container">
+                <div class="portfolio-content"> 
+                    <div class="error">
+                        <p id="noresult">No results found</p>
+                    </div>
+                    <div class="portfolio-header">
+                        <img id="avatar" src="#">
+                        <div class="portfolio-info-wrapper">
+                            <div class="portfolio-name">
+                                <h2 id="name"></h2>
+                                <a href="#" user id="user"></a>
+                            </div>
+                            <p id="date"></p>
+                        </div>
+                    
+                    </div>
+                    <p id="bio"></p>
+
+                    <div class="portfolio-stats-wrapper">
+                    
+                        <div class="portfolio-stats">
+                            <p class="stats-title">Repos</p>
+                            <p class="stats-value" id="repos"></p>
+                        </div>
+
+                        <div class="portfolio-stats">
+                            <p class="stats-title">Followers</p>
+                            <p class="stats-value" id="followers"></p>
+                        </div>
+
+                        <div class="portfolio-stats">
+                            <p class="stats-title">Following</p>
+                            <p class="stats-value" id="following"></p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="footer-container">
+
+                        <div class="info">
+                            <div class="bottom-icons"><i class="fa-solid fa-location-dot"></i></div>
+                            <p id="location"></p>
+                        </div>
+
+                        <div class="info">
+                            <div class="bottom-icons"><i class="fa-solid fa-link"></i></div>
+                            <a href="#" id="page"></a>
+                        </div>
+
+                        <div class="info">
+                            <div class="bottom-icons"><i class="fa-brands fa-twitter"></i></div>
+                            <a href="#" id="twitter"></a>
+                        </div>
+
+                        <div class="info">
+                            <div class="bottom-icons"><i class="fa-solid fa-building"></i></div>
+                            <p id="company"></p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>  
+    </div>
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/0f30a8abe0.js" crossorigin="anonymous"></script>
+</body>
+</html>
